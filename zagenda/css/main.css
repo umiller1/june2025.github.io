@@ -146,10 +146,10 @@ main > .container {
     .imgc {
         flex: 1;
     }
-    .imgc img {
+    /* .imgc img {
         mask-image: url(../images/brain2.svg);
         mask-repeat: no-repeat;
-    }
+    } */
 }
 
 /* footer */
