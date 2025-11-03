@@ -32,6 +32,17 @@ a.btn {
         border-radius: 10px;
         color: #111;
     }
+    &.alt {
+        border: 0px;
+        padding: 25px 0px;
+        background: linear-gradient(180deg, #c9ffb800, #b8e4ff);
+        transition: padding 0.5s, color 0.5s;
+        &:hover {
+            padding-bottom: 50px;
+            color: #c9ffb8;
+            border-radius: 0px;
+        }
+    }
 }
 
 #nav {
@@ -39,9 +50,9 @@ a.btn {
     gap: 25px;
     justify-content: center;
     background: linear-gradient(90deg, #c9ffb8, #b8e4ff);
-    padding: 5px 0px;
+    padding: 10px 0px;
     a {
-        font-size: 10px;
+        font-size: 16px;
         color: #111;
         font-variant: small-caps;
         &:hover {
@@ -108,6 +119,146 @@ a.btn {
         height: 300px;
         img {
             height: 100%;
+        }
+    }
+}
+
+/* Movie Showcase */
+#header {
+    display: grid;
+    grid-template-rows: auto minmax(0, 1fr);
+    height: 100dvh;
+}
+#header #hero-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    .col {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        text-align: center;
+        color: #fefefe;
+        gap: 25px;
+    }
+    .c1 {
+        background:
+            linear-gradient(180deg, #1110, #111),
+            url("../images/barbie.jpg")
+        ;
+        background-size: cover;
+        background-position: center;
+    }
+    .c2 {
+        background:
+            linear-gradient(180deg, #1110, #111),
+            url("../images/weapons.jpg")
+        ;
+        background-size: cover;
+        background-position: center;
+    }
+    .c3 {
+        background:
+            linear-gradient(180deg, #1110, #111),
+            url("../images/cat-returns.jpg")
+        ;
+        background-size: cover;
+        background-position: center;
+    }
+}
+#movie-showcase .section {
+    max-width: none;
+    width: 100dvw;
+    margin: 0px;
+    padding: 0px 5dvw 0px 0px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    border: none;
+    min-height: 80dvh;
+    overflow-x: hidden;
+    h2, p, .ic {
+        margin-bottom: 0px;
+    }
+    p {
+        padding: 10px 0px;
+        border-bottom: none;
+    }
+    .info {
+        border-bottom: 0.5px solid #0078c2;
+        margin-bottom: 10px;
+    }
+    .ic {
+        height: 100%;
+        img {
+            height: 100%;
+            display: block;
+        }
+    }
+}
+#movie-showcase .section .c2 {
+    padding: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .content, .card {
+        max-width: 600px;
+    }
+    .card {
+        border: 0.5px solid #0078c2;
+        background-color: #0078c255;
+        padding: 25px;
+        border-radius: 25px;
+        position: relative;
+        max-width: 350px;
+        margin: 0px auto;
+        z-index: 1;
+        blockquote {
+            padding: 10px;
+            backdrop-filter: blur(5px);
+            border-radius: 35px;
+        }
+        img {
+            width: 400px;
+            position: absolute;
+            z-index: -1;
+            top: 50%;
+            transform: translateY(-50%);
+            right: -20%;
+        }
+    }
+}
+#movie-showcase #s2 .card img {
+    width: 150px;
+    right: -10%;
+}
+#movie-showcase #s3 .card img {
+    width: 100px;
+    right: -10%;
+}
+#movie-showcase .section .c1 {
+    position: relative;
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 30px;
+        aspect-ratio: 1 / 1;
+        border-radius: 50%;
+        background: linear-gradient(45deg, #c9ffb8, #b8e4ff);
+        position: absolute;
+        bottom: 25px;
+        left: 25px;
+        color: #111;
+        i {
+            transform: rotate(-45deg);
+            backdrop-filter: blur(5px);
+            transition: color 0.5s, font-size 0.5s;
+        }
+        &:hover {
+            background: transparent;
+            i {
+                color: #0078c2aa;
+                font-size: 25px;
+            }
         }
     }
 }
