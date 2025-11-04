@@ -124,12 +124,12 @@ a.btn {
 }
 
 /* Movie Showcase */
-#header {
+#movie-showcase #header {
     display: grid;
     grid-template-rows: auto minmax(0, 1fr);
     height: 100dvh;
 }
-#header #hero-2 {
+#movie-showcase #header #hero-2 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     .col {
@@ -260,5 +260,145 @@ a.btn {
                 font-size: 25px;
             }
         }
+    }
+}
+
+/* Playlists */
+#playlists {
+    background-color: #111;
+}
+#playlists #header {
+    position: fixed;
+    top: 10px;
+    margin-left: 10px;
+    display: flex;
+    gap: 10px;
+    overflow-x: hidden;
+    #drop {
+        position: relative;
+        width: 50px;
+        aspect-ratio: 1 / 1;
+        cursor: pointer;
+        background: linear-gradient(45deg, #c9ffb8, #b8e4ff);
+        border-radius: 15px;
+        i {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            font-size: 2rem;
+        }
+    }
+    i.fa-igloo {
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.5s, visibility 0.5s;
+    }
+    i.fa-bars {
+        transition: opacity 0.5s, visibility 0.5s;
+    }
+    &:hover i.fa-igloo {
+        opacity: 1;
+        visibility: visible;
+    }
+    &:hover i.fa-bars {
+        opacity: 0;
+        visibility: hidden;
+    }
+    &:hover #nav {
+        transform: translateX(0px);
+    }
+    #nav {
+        background: 
+            linear-gradient(
+            45deg, 
+            #c9ffb8, 
+            #b8e4ff 5% 30%, 
+            #c9ffb8
+        );
+        display: flex;
+        align-items: center;
+        padding: 0px 25px;
+        transform: translateX(-100vw);
+        z-index: -1;
+        border-radius: 15px;
+        transition: transform 0.5s;
+    }
+}
+.playlist {
+    width: 90dvw;
+    margin: 25px auto;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+#p1.playlist .c1 {
+    background: url(../images/shark-plimg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.playlist .c2 {
+    background: linear-gradient(45deg, #c9ffb8, #b8e4ff);
+    display: grid;
+    gap: 15px 25px;
+    grid-template-columns: 250px 1fr;
+    grid-template-areas:
+        "head head"
+        "now-playing slide"
+    ;
+    padding: 25px;
+    /* min-height: 50dvh; */
+    h1 {
+        grid-area: head;
+        text-align: center;
+    }
+    .np {
+        min-height: 200px;
+        grid-area: now-playing;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: max-content 1fr max-content;
+        gap: 10px;
+        grid-template-areas:
+            "image np-title"
+            "image s-title"
+            "para para"
+        ;
+        .ic {
+            grid-area: image;
+            img {
+                height: 100%;
+            }
+        }
+        h3 {
+            grid-area: np-title;
+            font-size: 1rem;
+        }
+        h2 {
+            grid-area: s-title;
+            margin-left: -45px;
+            padding: 10px 0px 10px 10px;
+            background: linear-gradient(90deg, #fff5, #fff0 45%);
+            backdrop-filter: blur(5px);
+            border-radius: 15px;
+            align-self: center;
+        }
+        p {
+            grid-area: para;
+            justify-self: center;
+        }
+    }
+    .slider {
+        grid-area: slide;
+        overflow: hidden;
+    }
+    .slider .s-contain {
+        overflow-x: scroll;
+        display: flex;
+        gap: 15px;
+        align-items: flex-end;
+        height: 100%;
+    }
+    .s-contain .card {
+        flex: 0 0 200px;
     }
 }
