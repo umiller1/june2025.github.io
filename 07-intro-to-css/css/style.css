@@ -6,3 +6,20 @@ p {
     background-color: black;
     color: white;
 }
+
+span {
+    font-weight: bold;
+}
+#s1 {
+    color: aquamarine;
+}
+#s2 {
+    color: orange;
+}
+#s3 {
+    background-color: darkgoldenrod;
+}
+#s4 {
+    background-color: aliceblue;
+    color: black;
+}
