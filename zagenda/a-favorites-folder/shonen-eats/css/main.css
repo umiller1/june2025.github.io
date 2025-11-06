@@ -206,7 +206,10 @@ nav a.btn:hover {
 }
 #img1 {
     grid-area: img1;
-    background: linear-gradient(to bottom, #111111ff 10%, #11111100), url(../images/mysteriously-plain-pancakes.jpg);
+    background: 
+        linear-gradient(to bottom, #111111ff 10%, #11111100),
+        url(../images/mysteriously-plain-pancakes.jpg)
+    ;
     background-position: center;
     background-size: cover;
 }
