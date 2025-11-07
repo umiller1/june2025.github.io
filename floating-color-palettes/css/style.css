@@ -1,0 +1,9 @@
+.color-palette {
+    box-shadow: 6px 6px 12px #989898;
+    text-align: center;
+    margin: 24px;
+    padding: 24px;
+}
+#p1-c1 {
+    background-color: #ffe37c;
+}

@@ -1,0 +1,6 @@
+.shadowed {
+    background-color: lightgrey;
+    margin: 24px;
+    padding: 24px;
+    box-shadow: 5px 5px 15px #1116;
+}
