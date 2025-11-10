@@ -4,6 +4,34 @@
     margin: 24px;
     padding: 24px;
 }
+.color {
+    margin: 0px;
+    padding: 24px;
+}
+
 #p1-c1 {
     background-color: #ffe37c;
+}
+#p1-c2 {
+    background-color: #caa38e;
+}
+#p1-c3 {
+    background-color: #a0c7b5;
+}
+
+#p2-c1 {
+    background-color: #83ff00;
+}
+#p2-c2 {
+    background-color: #dbe80f;
+}
+#p2-c3 {
+    background-color: #ffc380;
+}
+/* Unique's Fun Overrides */
+body {
+    display: flex;
+}
+.color-palette {
+    flex: 1;
 }
