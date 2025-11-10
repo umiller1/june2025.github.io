@@ -1,0 +1,39 @@
+#container {
+    width: 500px;
+    min-height: 100vh;
+    background-color: #12123e;
+    font-size: 0px;
+}
+.block {
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    background-color: #fef;
+    border-width: 5px;
+    border-style: outset;
+    border-radius: 70px 20px;
+}
+.block:nth-of-type(odd) {
+    border-radius: 20px 70px;
+}
+.orange {
+    background-color: #ffbf59;
+    border-color: #ffbf59;
+}
+.periwinkle {
+    background-color: #9898ff;
+    border-color: #9898ff;
+}
+.persimmon {
+    background-color: #ec5800;
+    border-color: #ec5800;
+}
+.viridian {
+    background-color: #40826d;
+    border-color: #40826d;
+}
+.empty {
+    background-color: transparent;
+    border-color: transparent;
+    box-shadow: none;
+}
