@@ -1,0 +1,45 @@
+/*
+    NOTE TO STUDENTS: 
+
+    This is the file you should be writing your CSS in 
+    for the Bulletin Board assignment.
+
+    Good luck, and have fun!
+*/
+.post-it {
+    background-color: #ffffa5;
+    display: inline-block;
+    width: 150px;
+    font-family: sans-serif;
+    margin: 24px; 
+    padding: 24px;
+    vertical-align: top;
+    position: relative;
+}
+.pin {
+    position: absolute;
+    top: -12px;
+    right: 50%;
+    transform: translateX(50%);
+    rotate: -10deg;
+    width: 60px;
+}
+img {
+    width: 100%;
+    object-fit: cover;
+}
+p {
+    margin: 10px 0px;
+}
+ul {
+    padding-left: 10px;
+}
+
+.polaroid {
+    width: 100px;
+    background-color: #ffffff;
+    padding: 5px;
+}
+.polaroid img {
+    aspect-ratio: 1 / 1;
+}
