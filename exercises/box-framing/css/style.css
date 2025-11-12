@@ -1,0 +1,50 @@
+.frame {
+    width: 200px;
+    padding: 20px;
+    border: 10px outset #a56e2a;
+    margin: 25px;
+    display: inline-block;
+    background-color: #eee;
+    box-shadow: 
+        2px 2px 5px #111a,
+        inset 2px 2px 2px #111a
+    ;
+    vertical-align: top;
+}
+#f1 {
+    width: 120px;
+    rotate: 1deg;
+}
+#f2 {
+    width: 150px;
+    border-color: #527bd3;
+    rotate: -1deg;
+}
+#f3 {
+    margin-top: -50px;
+    width: 120px;
+    border-color: #df6832;
+    rotate: -0.5deg;
+}
+#f4 {
+    margin-top: 20px;
+    width: 150px;
+    border-color: #225edd;
+    rotate: 2deg;
+}
+h1 {
+    width: 140px;
+    border: 10px outset #73440a;
+    background-color: #73440a;
+    color: #fff7d2;
+    padding: 20px;
+    margin: -115px 0px 50px 25px;
+    text-align: center;
+    box-shadow: 
+        2px 2px 5px #111a,
+        inset 2px 2px 2px #111a
+    ;
+    display: inline-block;
+    vertical-align: top;
+    rotate: -1deg;
+}
