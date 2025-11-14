@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Stack+Sans+Text:wght@200..700&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Stack Sans Text", sans-serif;
+}
+video {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+body > div {
+    z-index: 1;
+    position: relative;
+    min-height: 40vh;
+    max-width: 900px;
+    width: 75dvw;
+    margin: 50px auto;
+    padding: 35px 0px 0px 35px;
+    color: #eee;
+    border-radius: 50px;
+}
+div video {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    z-index: -2;
+}
+div > div::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 50px;
+    background: linear-gradient(
+    -45deg, 
+        #3f87a6aa, 
+        #a63f67aa, 
+        #f69d3caa);
+    mix-blend-mode: color;
+    backdrop-filter: blur(25px);
+}
+
+.btn {
+    display: inline-block;
+    background-color: pink;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
