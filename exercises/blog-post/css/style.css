@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Stack+Sans+Text:wght@200..700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-family: "Stack Sans Text", sans-serif;
+    background-color: #fff6e4;
+    font-weight: 200;
+    font-size: 1.125rem;
+    color: #1c1100;
+}
+h1, h2 {
+    font-family: "Playfair Display", serif;
+}
+a {
+    color: #b16c04;
+    text-decoration: none;
+    display: inline-block;
+}
+img {
+    width: 100%;
+    object-fit: cover;
+}
+.ic img {
+    height: 100%;
+}
+.contain {
+    width: 85dvw;
+    max-width: 900px;
+    margin: 0px auto;
+}
+
+/* Navigation */
+#navbar {
+    margin: 25px 0px;
+}
+#navbar > div {
+    border: 0.5px solid #1c1100;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    overflow-x: scroll;
+}
+#navbar a {
+    font-weight: 400;
+    padding: 15px;
+    border-left: 0.5px solid #1c1100;
+    transition: background-color 0.5s, color 0.5s;
+    font-size: 1rem;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar a:hover {
+    background-color: #1c1100;
+    color: #fff6e4;
+}
+#navbar a:first-child {
+    border: none;
+}
+#navbar .logo {
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    font-variant: small-caps;
+}
+
+/* Article Header */
+h4 {
+    margin: 10px 0px;
+    font-weight: 300;
+}
+.header .sbs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+.byline {
+    display: flex;
+    align-items: center;
+}
+.byline a {
+    font-weight: 400;
+    margin-left: 5px;
+}
+.byline .ic {
+    display: inline-block;
+    margin-left: 10px;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #b16c04, #fff 50% ,#0438b1);
+}
+.byline .ic img {
+    height: 100%;
+    border-radius: 50%;
+    padding: 2px;
+}
+#main .contain > .ic {
+    height: 250px;
+}
+#main .contain > .ic img {
+    object-position: center 70%;
+}
+
+/* Article Body*/
+.article p {
+    margin: 20px 0px;
+}
