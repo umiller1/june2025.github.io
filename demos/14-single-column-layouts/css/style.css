@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+.light-container {
+    background-color: #d7f8a8;
+    padding: 48px 0px;
+}
+.dark-container {
+    background-color: #10474d;
+    color: aliceblue;
+    padding: 48px 0px;
+}
+
+.single-column {
+    width: 50%;
+    max-width: 900px;
+    min-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
