@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family: 'cat';
+    src: 
+        url('../fonts/cute-notes.ttf') format("truetype"),
+        url('../fonts/cute-notes.otf') format("opentype"),
+        url('../fonts/cute-notes.svg') format("svg");
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Montserrat", sans-serif;
+}
+h2 {
+    font-family: "cat", fantasy;
+}
+h1, h2, a {
+    font-weight: 600;
+}
+img {
+    width: 100%;
+    object-fit: cover;
+}
+.contain {
+    width: 90dvw;
+    max-width: 1280px;
+    margin: 0px auto;
+}
+
+.section {
+    padding: 40px 0px;
+    min-height: 50dvh;
+}
+.section h2 {
+    font-size: 2rem;
+    word-break: break-all;
+    transition: font-size 1s, word-break 0.5s;
+}
+.section h2::first-letter {
+    font-size: 4rem;
+    color: #e08e00;
+}
+.section:hover h2 {
+    font-size: 4rem;
+}
+.section p {
+    max-width: 350px;
+    margin: 40px 0px 10px;
+}
+.section img {
+    width: 200px;
+}
+.section .contain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.section:nth-of-type(2n) .contain {
+    flex-direction: row-reverse;
+}
+
+#s1 {
+    background-color: #d9eeff;
+}
