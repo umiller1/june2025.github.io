@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
 }
+
 body {
     margin: 0px;
     font-family: sans-serif;
@@ -25,15 +26,39 @@ body {
     margin: 36px 0px;
     flex: 1;
 }
+
 .card h3 {
     font-size: 36px;
     margin: 0px;
 }
+
 .card p {
     font-size: 24px;
     margin: 24px 0px 0px;
 }
 
 .sbs {
+    margin-bottom: 50px;
     display: flex;
+    align-items: center;
+    gap: 36px;
+}
+
+.sbs .imgc,
+.sbs .content {
+    flex: 1;
+}
+
+.sbs img {
+    width: 100%;
+}
+
+.sbs h2 {
+    font-size: 60px;
+    margin: 0px;
+}
+
+.sbs p {
+    margin-top: 16px;
+    font-size: 20px;
 }
