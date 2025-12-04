@@ -64,6 +64,7 @@ header .logo {
     align-items: center;
     justify-content: center;
     position: relative;
+    overflow-y: hidden;
 }
 #hero h1 {
     font-size: 3.5rem;
@@ -133,25 +134,16 @@ header .vl {
     }
 }
 #hero .ring {
-    animation: spin 8s forwards infinite;
+    animation: spin 8s ease-in-out forwards infinite;
 }
 @keyframes walk {
     0% {
-        transform: translate(0%, 0%);
+        transform: translateY(0%);
     }
-    10% {
-        transform: translate(10%, 5%);
-    }
-    20% {
-        transform: translate(20%, 0%);
-    }
-    40% {
-        transform: translate(10%, 5%);
-    }
-    50% {
-        transform: translate(20%, 0%);
+    100% {
+        transform: translateY(5%);
     }
 }
 #hero-img {
-    animation: walk 8s forwards infinite;
+    animation: walk 5s ease-in-out forwards infinite;
 }
