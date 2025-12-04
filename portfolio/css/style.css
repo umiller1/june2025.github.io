@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+body {
+    font-family: sans-serif;
+    color: #111;
+    background-color: #fafafa;
+}
+img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+a {
+    display: inline-block;
+    color: #111;
+    text-decoration: none;
+}
+.container {
+    max-width: 1280px;
+    width: 90vh;
+    margin: 0px auto;
+}
+.vl {
+    display: inline-block;
+    width: 0.5px;
+    min-height: 50px;
+    background-color: #111;
+}
+
+header {
+    position: relative;
+    height: 100dvh;
+    background-color: #111;
+    background-image: url("../images/giraffee-back.png");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+header nav {
+    padding: 25px 0px;
+}
+header nav a {
+    padding: 5px 25px;
+    border-right: 0.5px solid #111;
+    font-size: 1.25rem;
+    &:last-child {
+        padding-right: 0px;
+        border: none;
+    }
+    &:first-child {
+        padding-left: 0px;
+    }
+}
+header .logo {
+    width: 50px;
+}
+#hero {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#hero h1 {
+    font-size: 3.5rem;
+    letter-spacing: 0.1em;
+    position: relative;
+    z-index: 1;
+}
+#hero .ring {
+    display: block;
+    translate: -50% -50%;
+    background: linear-gradient(45deg, #fff 0% 15%,#CF8BF3, #CF8BF3, #FDB99B, #fff 85% 100%);
+    height: 12rem;
+    width: 12rem;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    -webkit-mask: radial-gradient(circle at 50% 50%, transparent 90px, black 91px);
+    mask: radial-gradient(circle at 50% 50%, transparent 90px, black 91px);
+    /* optional: smooth edge */
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+#hero-img {
+    height: 430px;
+    position: absolute;
+    z-index: 2;
+    bottom: 0px;
+    right: 25px;
+    img {
+        height: 100%;
+        object-fit: contain;
+    }
+}
+header .vl {
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 80%;
+}
+.top, .bttm {
+    position: absolute;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 25px;
+}
+.top {
+    top: 0px;
+}
+.bttm {
+    bottom: 0px;
+}
+
+/* Animations */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+#hero .ring {
+    animation: spin 8s forwards infinite;
+}
+@keyframes walk {
+    0% {
+        transform: translate(0%, 0%);
+    }
+    10% {
+        transform: translate(10%, 5%);
+    }
+    20% {
+        transform: translate(20%, 0%);
+    }
+    40% {
+        transform: translate(10%, 5%);
+    }
+    50% {
+        transform: translate(20%, 0%);
+    }
+}
+#hero-img {
+    animation: walk 8s forwards infinite;
+}
