@@ -136,6 +136,7 @@ header .vl {
 #hero .ring {
     animation: spin 8s ease-in-out forwards infinite;
 }
+
 @keyframes walk {
     0% {
         transform: translateY(0%);
